@@ -10,6 +10,6 @@ from typing import Union, Tuple
 import math
 
 
-def to_kv(k: str, v: Union[int, float]) -> Tuple:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """THe function of the program that specifies with the module"""
-    return (k, (v*v))
+    return (k, float(v ** 2))

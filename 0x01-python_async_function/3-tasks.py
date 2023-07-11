@@ -8,7 +8,7 @@ import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-def task_wait_random(max_delay: int):
+def task_wait_random(max_delay: int) -> asyncio.Task:
     """The function for the program"""
     number = wait_random(max_delay)
     return asyncio.Task(number)
